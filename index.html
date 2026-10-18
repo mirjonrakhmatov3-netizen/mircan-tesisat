@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102334">
+  <meta name="description" content="İstanbul Anadolu Yakası'nda tesisat, mutfak dolabı, banyo, klozet, kapı montajı ve ev içi tamirat hizmetleri. Mircan Tesisat & Tamirat ile WhatsApp'tan iletişime geçin.">
+  <title>Mircan Tesisat &amp; Tamirat | İstanbul Anadolu Yakası</title>
+  <style>
+    :root{--navy:#102334;--navy2:#17384a;--teal:#17a398;--mint:#57ddd0;--ink:#172b3a;--muted:#647586;--light:#f3f7f8;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,35,52,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;font-size:1.08rem;letter-spacing:.2px}.brand span{display:block;color:var(--mint);font-size:.72rem;font-weight:600;letter-spacing:1.8px;text-transform:uppercase}
+    .navlinks{display:flex;align-items:center;gap:20px;font-size:.92rem}.navlinks a:hover{color:var(--mint)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:10px;font-weight:700;border:0;cursor:pointer;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--teal);color:#fff}.btn-light{background:#fff;color:var(--navy)}.btn-outline{border:1px solid #d5e0e5;color:var(--navy);background:#fff}
+    .hero{color:#fff;background:radial-gradient(ellipse at 85% 20%,rgba(23,163,152,.3),transparent 35%),linear-gradient(120deg,var(--navy),var(--navy2));padding:88px 0 76px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:46px}.eyebrow{display:inline-block;color:var(--mint);font-size:.8rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(2.35rem,5vw,4.25rem);line-height:1.08;margin:15px 0 20px;letter-spacing:-1.5px}.hero p{max-width:620px;color:#d8e5ec;font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .hero-card{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);padding:26px;border-radius:20px;backdrop-filter:blur(6px)}
+    .hero-card h2{margin:0 0 12px;font-size:1.1rem}.quick-list{display:grid;gap:12px}.quick-item{display:flex;align-items:center;gap:12px;color:#edf5f8}.quick-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:rgba(87,221,208,.14);color:var(--mint);font-size:1.25rem;flex-shrink:0}
+    section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 36px}.section-head .eyebrow{color:var(--teal)}h2.section-title{font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.2;margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border:1px solid #e1e9ed;border-radius:17px;padding:24px;background:#fff;box-shadow:0 8px 26px rgba(16,35,52,.035)}.service-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:15px;background:#e8f8f6;color:#087f78;font-size:1.65rem;margin-bottom:16px}.service h3{margin:0 0 8px;font-size:1.15rem}.service p{margin:0;color:var(--muted);font-size:.95rem}.service ul{padding-left:19px;margin:14px 0 0;color:#405466;font-size:.92rem}
+    .band{background:var(--light)}.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.why-panel{background:var(--navy);color:#fff;border-radius:20px;padding:30px}.why-panel p{color:#d8e5ec}.why-points{display:grid;grid-template-columns:1fr 1fr;gap:18px}.why-point{background:#fff;border:1px solid #e3ebee;border-radius:14px;padding:18px}.why-point strong{display:block;margin-bottom:4px}.why-point span{font-size:.9rem;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:24px;border-radius:16px;background:#f4f8f9}.step-num{font-weight:800;color:var(--teal);font-size:.82rem;letter-spacing:1px}.step h3{margin:8px 0}.step p{margin:0;color:var(--muted);font-size:.94rem}
+    .contact{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.contact p{color:#d8e5ec}.contact-card{background:#fff;color:var(--ink);border-radius:18px;padding:26px}.contact-row{display:flex;gap:13px;align-items:center;padding:12px 0;border-bottom:1px solid #e8eef0}.contact-row:last-of-type{border:0}.contact-row b{display:block}.contact-row small{color:var(--muted)}
+    footer{background:#0b1b28;color:#c6d3db;padding:24px 0;font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:20;background:#20b967;color:white;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 8px 24px #0b1b2840}
+    @media(max-width:800px){.navlinks{display:none}.hero{padding:62px 0}.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{gap:28px}.services{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.why-points{grid-template-columns:1fr 1fr}section{padding:58px 0}}
+    @media(max-width:520px){.services{grid-template-columns:1fr}.hero h1{letter-spacing:-.8px}.hero-card{padding:20px}.actions .btn{width:100%}.why-points{grid-template-columns:1fr}.wa-float{right:12px;bottom:12px;padding:12px 15px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#anasayfa">Mircan Tesisat &amp; Tamirat<span>Güvenilir hizmet</span></a>
+    <nav class="navlinks" aria-label="Ana menü">
+      <a href="#hizmetler">Hizmetler</a><a href="#hakkimizda">Neden Biz?</a><a href="#iletisim">İletişim</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/905528292757?text=Merhaba%2C%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="anasayfa">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">İstanbul Anadolu Yakası</span>
+        <h1>Eviniz İçin Güvenilir <span style="color:var(--mint)">Tamirat ve Montaj</span> Hizmetleri</h1>
+        <p>Tesisat, mutfak dolabı, banyo, klozet, kapı montajı ve ev içi tamirat işleriniz için bizimle iletişime geçin.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/905528292757?text=Merhaba%2C%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">✆ WhatsApp'tan Fiyat Alın</a>
+          <a class="btn btn-light" href="tel:+905528292757">☎ 0552 829 27 57</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>Hizmetlerimiz</h2>
+        <div class="quick-list">
+          <div class="quick-item"><span class="quick-icon">⌁</span><span><b>Tesisat İşleri</b><br><small>Musluk, su kaçağı, tıkanıklık</small></span></div>
+          <div class="quick-item"><span class="quick-icon">▤</span><span><b>Mutfak Dolabı</b><br><small>Montaj, kapak ve çekmece tamiri</small></span></div>
+          <div class="quick-item"><span class="quick-icon">▱</span><span><b>Banyo ve WC</b><br><small>Klozet, lavabo ve duş seti</small></span></div>
+          <div class="quick-item"><span class="quick-icon">⌂</span><span><b>Kapı ve Ev İçi Tamirat</b><br><small>Kapı, kilit, mobilya montajı</small></span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Neler yapıyoruz?</span><h2 class="section-title">Tamirat ve Montaj Hizmetlerimiz</h2><p>Ev ve iş yerinizde ihtiyaç duyduğunuz tesisat, montaj ve küçük tamirat işleri için çözüm sunuyoruz.</p></div>
+      <div class="services">
+        <article class="service"><div class="service-icon">💧</div><h3>Tesisat Hizmetleri</h3><p>Su tesisatı ve günlük tesisat ihtiyaçları.</p><ul><li>Musluk ve batarya değişimi</li><li>Su kaçağı ve sızıntı tamiri</li><li>Lavabo ve evye montajı</li><li>Tıkanıklık açma</li><li>Petek tesisatı ve montajı</li></ul></article>
+        <article class="service"><div class="service-icon">▤</div><h3>Mutfak Dolabı</h3><p>Mutfak dolabı ve bağlantılı montaj işleri.</p><ul><li>Mutfak dolabı montajı</li><li>Dolap kapağı ve menteşe değişimi</li><li>Çekmece tamiri</li><li>Evye ve batarya montajı</li><li>Raf montajı</li></ul></article>
+        <article class="service"><div class="service-icon">🛁</div><h3>Banyo ve WC</h3><p>Banyo ve tuvalet için montaj ve tamirat.</p><ul><li>Klozet montajı ve değişimi</li><li>Rezervuar tamiri</li><li>Lavabo ve banyo dolabı montajı</li><li>Duş başlığı ve duş seti</li><li>Silikon yenileme</li></ul></article>
+        <article class="service"><div class="service-icon">🚪</div><h3>Kapı ve Kilit İşleri</h3><p>İç kapılar ve tamamlayıcı parçalar.</p><ul><li>İç kapı montajı</li><li>Kapı kolu ve kilit değişimi</li><li>Menteşe ve kapı ayarı</li><li>Kapı sökme ve takma</li></ul></article>
+        <article class="service"><div class="service-icon">🪛</div><h3>Mobilya Montajı</h3><p>Ev içindeki mobilya ve aksesuarlar.</p><ul><li>Gardırop ve mobilya montajı</li><li>Duvar rafı montajı</li><li>Masa ve dolap kurulumları</li><li>Montaj ve demontaj işleri</li></ul></article>
+        <article class="service"><div class="service-icon">🧰</div><h3>Genel Tamirat ve Tadilat</h3><p>Küçük ev içi tamirat ve yenileme işleri.</p><ul><li>Küçük duvar tamiratları</li><li>Banyo ve mutfak yenileme işleri</li><li>Basit boya ve düzeltme işleri</li><li>Ev içi bakım ve montaj</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="hakkimizda">
+    <div class="wrap why-grid">
+      <div><span class="eyebrow">Mircan Tesisat &amp; Tamirat</span><h2 class="section-title">İşinizi Özenle Yapıyoruz</h2><p style="color:var(--muted)">İhtiyacınızı anlatın; yapılacak işi ve uygun çözümü birlikte değerlendirelim. Hizmet bölgesi ve müsaitlik için WhatsApp üzerinden bize ulaşabilirsiniz.</p><a class="btn btn-primary" href="https://wa.me/905528292757?text=Merhaba%2C%20bir%20tamirat%20i%C5%9Fim%20var." target="_blank" rel="noopener">Bize Ulaşın</a></div>
+      <div class="why-points">
+        <div class="why-point"><strong>✓ Açık İletişim</strong><span>İş detaylarını doğrudan konuşun.</span></div>
+        <div class="why-point"><strong>✓ Pratik Çözüm</strong><span>İhtiyacınıza uygun seçenekleri değerlendirelim.</span></div>
+        <div class="why-point"><strong>✓ Çok Yönlü Hizmet</strong><span>Tesisat, dolap, banyo ve kapı işleri.</span></div>
+        <div class="why-point"><strong>✓ Kolay Ulaşım</strong><span>Telefon veya WhatsApp üzerinden iletişim.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Kolay iletişim</span><h2 class="section-title">Nasıl Çalışıyoruz?</h2><p>İhtiyacınızı paylaşın, yapılacak işi birlikte netleştirelim.</p></div>
+      <div class="steps">
+        <article class="step"><span class="step-num">01 / İLETİŞİM</span><h3>Bize Ulaşın</h3><p>WhatsApp üzerinden yapılacak işi ve varsa fotoğrafları gönderin.</p></article>
+        <article class="step"><span class="step-num">02 / DEĞERLENDİRME</span><h3>İşi Netleştirelim</h3><p>İşin kapsamı, konum ve uygun zaman hakkında konuşalım.</p></article>
+        <article class="step"><span class="step-num">03 / PLANLAMA</span><h3>Uygun Zamanı Belirleyin</h3><p>Fiyat ve müsaitlik teyidinden sonra hizmeti planlayalım.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="iletisim">
+    <div class="wrap contact-grid">
+      <div><span class="eyebrow">İletişim</span><h2 class="section-title">Tamirat İşiniz mi Var?</h2><p>İşinizi kısaca anlatın. Size uygun hizmet ve müsaitlik hakkında görüşmek için arayın veya WhatsApp'tan yazın.</p><a class="btn btn-primary" href="https://wa.me/905528292757?text=Merhaba%2C%20Mircan%20Tesisat%20%26%20Tamirat%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Mesaj Gönder</a></div>
+      <div class="contact-card">
+        <div class="contact-row"><span class="quick-icon">☎</span><div><small>Telefon</small><b><a href="tel:+905528292757">0552 829 27 57</a></b></div></div>
+        <div class="contact-row"><span class="quick-icon">✉</span><div><small>WhatsApp</small><b><a href="https://wa.me/905528292757" target="_blank" rel="noopener">WhatsApp'tan yazın</a></b></div></div>
+        <div class="contact-row"><span class="quick-icon">⌖</span><div><small>Hizmet bölgesi</small><b>İstanbul Anadolu Yakası</b></div></div>
+        <p style="font-size:.85rem;margin-bottom:0">Hizmet alanı ve uygunluk için lütfen önceden iletişime geçin.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Mircan Tesisat &amp; Tamirat</span><span>İstanbul Anadolu Yakası • Tesisat ve Tamirat</span></div></footer>
+<a class="wa-float" href="https://wa.me/905528292757?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile iletişim">☏ WhatsApp</a>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
